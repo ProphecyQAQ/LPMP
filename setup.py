@@ -76,9 +76,10 @@ class CMakeBuild(build_ext):
     def _prepare_environment(self):
         gcc, gpp = self._find_suitable_gcc_gpp()
 
-        gcc_path = subprocess.check_output(f"which {gcc}", shell=True).decode("utf-8").rstrip()
-        gpp_path = subprocess.check_output(f"which {gpp}", shell=True).decode("utf-8").rstrip()
-
+        #gcc_path = subprocess.check_output(f"which {gcc}", shell=True).decode("utf-8").rstrip()
+        #gpp_path = subprocess.check_output(f"which {gpp}", shell=True).decode("utf-8").rstrip()
+        gcc_path = "D:/msys64/mingw64/bin/gcc.exe"
+        gpp_path = "D:/msys64/mingw64/bin/g++.exe"
         os.environ["CC"] = gcc_path
         os.environ["CXX"] = gpp_path
 
