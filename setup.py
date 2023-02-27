@@ -78,8 +78,8 @@ class CMakeBuild(build_ext):
 
         #gcc_path = subprocess.check_output(f"which {gcc}", shell=True).decode("utf-8").rstrip()
         #gpp_path = subprocess.check_output(f"which {gpp}", shell=True).decode("utf-8").rstrip()
-        gcc_path = "E:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x64/cl.exe"
-        gpp_path = "E:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x64/cl.exe"
+        gcc_path = "D:\\msys64\\mingw64\\bin\\gcc.exe"
+        gpp_path = "D:\\msys64\\mingw64\\bin\\gcc.exe"
         os.environ["CC"] = gcc_path
         os.environ["CXX"] = gpp_path
 
